@@ -1,0 +1,817 @@
+state,bmi,income,count
+Alabama,underweight,less_than_25k,30772
+Alabama,underweight,btw_25k_and_75k,18215
+Alabama,underweight,greater_than_75k,3336
+Alabama,underweight,missing,16808
+Alabama,normal,less_than_25k,232918
+Alabama,normal,btw_25k_and_75k,323260
+Alabama,normal,greater_than_75k,222455
+Alabama,normal,missing,223336
+Alabama,overweight,less_than_25k,268978
+Alabama,overweight,btw_25k_and_75k,391708
+Alabama,overweight,greater_than_75k,300855
+Alabama,overweight,missing,219367
+Alabama,obese,less_than_25k,362431
+Alabama,obese,btw_25k_and_75k,437387
+Alabama,obese,greater_than_75k,248865
+Alabama,obese,missing,231091
+Alaska,underweight,less_than_25k,1868
+Alaska,underweight,btw_25k_and_75k,3846
+Alaska,underweight,greater_than_75k,2052
+Alaska,underweight,missing,3729
+Alaska,normal,less_than_25k,33448
+Alaska,normal,btw_25k_and_75k,58402
+Alaska,normal,greater_than_75k,54514
+Alaska,normal,missing,30030
+Alaska,overweight,less_than_25k,32018
+Alaska,overweight,btw_25k_and_75k,49157
+Alaska,overweight,greater_than_75k,72470
+Alaska,overweight,missing,28441
+Alaska,obese,less_than_25k,27014
+Alaska,obese,btw_25k_and_75k,43872
+Alaska,obese,greater_than_75k,58425
+Alaska,obese,missing,25738
+Arizona,underweight,less_than_25k,41365
+Arizona,underweight,btw_25k_and_75k,37113
+Arizona,underweight,greater_than_75k,19398
+Arizona,underweight,missing,11870
+Arizona,normal,less_than_25k,311345
+Arizona,normal,btw_25k_and_75k,554257
+Arizona,normal,greater_than_75k,492919
+Arizona,normal,missing,296094
+Arizona,overweight,less_than_25k,351933
+Arizona,overweight,btw_25k_and_75k,654758
+Arizona,overweight,greater_than_75k,489930
+Arizona,overweight,missing,264207
+Arizona,obese,less_than_25k,401988
+Arizona,obese,btw_25k_and_75k,547799
+Arizona,obese,greater_than_75k,316723
+Arizona,obese,missing,207560
+Arkansas,underweight,less_than_25k,19152
+Arkansas,underweight,btw_25k_and_75k,18086
+Arkansas,underweight,greater_than_75k,8747
+Arkansas,underweight,missing,4434
+Arkansas,normal,less_than_25k,160602
+Arkansas,normal,btw_25k_and_75k,209436
+Arkansas,normal,greater_than_75k,105474
+Arkansas,normal,missing,104700
+Arkansas,overweight,less_than_25k,188132
+Arkansas,overweight,btw_25k_and_75k,261774
+Arkansas,overweight,greater_than_75k,163504
+Arkansas,overweight,missing,98455
+Arkansas,obese,less_than_25k,266537
+Arkansas,obese,btw_25k_and_75k,294552
+Arkansas,obese,greater_than_75k,139909
+Arkansas,obese,missing,91682
+California,underweight,less_than_25k,203609
+California,underweight,btw_25k_and_75k,77274
+California,underweight,greater_than_75k,154783
+California,underweight,missing,75305
+California,normal,less_than_25k,2033640
+California,normal,btw_25k_and_75k,2757930
+California,normal,greater_than_75k,3884361
+California,normal,missing,1343711
+California,overweight,less_than_25k,2185422
+California,overweight,btw_25k_and_75k,3116837
+California,overweight,greater_than_75k,3807744
+California,overweight,missing,1009381
+California,obese,less_than_25k,2049466
+California,obese,btw_25k_and_75k,2350732
+California,obese,greater_than_75k,2067868
+California,obese,missing,722745
+Colorado,underweight,less_than_25k,17439
+Colorado,underweight,btw_25k_and_75k,19072
+Colorado,underweight,greater_than_75k,12267
+Colorado,underweight,missing,21223
+Colorado,normal,less_than_25k,264589
+Colorado,normal,btw_25k_and_75k,510418
+Colorado,normal,greater_than_75k,603848
+Colorado,normal,missing,238152
+Colorado,overweight,less_than_25k,211960
+Colorado,overweight,btw_25k_and_75k,519156
+Colorado,overweight,greater_than_75k,572511
+Colorado,overweight,missing,170677
+Colorado,obese,less_than_25k,178031
+Colorado,obese,btw_25k_and_75k,311528
+Colorado,obese,greater_than_75k,344026
+Colorado,obese,missing,107865
+Connecticut,underweight,less_than_25k,12196
+Connecticut,underweight,btw_25k_and_75k,8678
+Connecticut,underweight,greater_than_75k,6844
+Connecticut,underweight,missing,11930
+Connecticut,normal,less_than_25k,122134
+Connecticut,normal,btw_25k_and_75k,222775
+Connecticut,normal,greater_than_75k,342778
+Connecticut,normal,missing,186438
+Connecticut,overweight,less_than_25k,147131
+Connecticut,overweight,btw_25k_and_75k,245158
+Connecticut,overweight,greater_than_75k,400684
+Connecticut,overweight,missing,157032
+Connecticut,obese,less_than_25k,124392
+Connecticut,obese,btw_25k_and_75k,217933
+Connecticut,obese,greater_than_75k,248751
+Connecticut,obese,missing,113188
+Delaware,underweight,less_than_25k,4068
+Delaware,underweight,btw_25k_and_75k,3249
+Delaware,underweight,greater_than_75k,1636
+Delaware,underweight,missing,1944
+Delaware,normal,less_than_25k,35991
+Delaware,normal,btw_25k_and_75k,65456
+Delaware,normal,greater_than_75k,67728
+Delaware,normal,missing,40320
+Delaware,overweight,less_than_25k,44533
+Delaware,overweight,btw_25k_and_75k,76619
+Delaware,overweight,greater_than_75k,81187
+Delaware,overweight,missing,32026
+Delaware,obese,less_than_25k,50704
+Delaware,obese,btw_25k_and_75k,73849
+Delaware,obese,greater_than_75k,72828
+Delaware,obese,missing,31801
+District of Columbia,underweight,less_than_25k,2199
+District of Columbia,underweight,btw_25k_and_75k,3350
+District of Columbia,underweight,greater_than_75k,4158
+District of Columbia,underweight,missing,3049
+District of Columbia,normal,less_than_25k,33746
+District of Columbia,normal,btw_25k_and_75k,45570
+District of Columbia,normal,greater_than_75k,113559
+District of Columbia,normal,missing,28652
+District of Columbia,overweight,less_than_25k,31843
+District of Columbia,overweight,btw_25k_and_75k,38181
+District of Columbia,overweight,greater_than_75k,74081
+District of Columbia,overweight,missing,20944
+District of Columbia,obese,less_than_25k,42151
+District of Columbia,obese,btw_25k_and_75k,38663
+District of Columbia,obese,greater_than_75k,35534
+District of Columbia,obese,missing,14554
+Florida,underweight,less_than_25k,110622
+Florida,underweight,btw_25k_and_75k,82288
+Florida,underweight,greater_than_75k,36016
+Florida,underweight,missing,51560
+Florida,normal,less_than_25k,1142433
+Florida,normal,btw_25k_and_75k,1556216
+Florida,normal,greater_than_75k,1245151
+Florida,normal,missing,929789
+Florida,overweight,less_than_25k,1211184
+Florida,overweight,btw_25k_and_75k,1808164
+Florida,overweight,greater_than_75k,1495173
+Florida,overweight,missing,815551
+Florida,obese,less_than_25k,1285638
+Florida,obese,btw_25k_and_75k,1680065
+Florida,obese,greater_than_75k,1052575
+Florida,obese,missing,620144
+Georgia,underweight,less_than_25k,35574
+Georgia,underweight,btw_25k_and_75k,39797
+Georgia,underweight,greater_than_75k,28233
+Georgia,underweight,missing,37513
+Georgia,normal,less_than_25k,456381
+Georgia,normal,btw_25k_and_75k,681978
+Georgia,normal,greater_than_75k,673271
+Georgia,normal,missing,378106
+Georgia,overweight,less_than_25k,541251
+Georgia,overweight,btw_25k_and_75k,841554
+Georgia,overweight,greater_than_75k,754202
+Georgia,overweight,missing,334802
+Georgia,obese,less_than_25k,639298
+Georgia,obese,btw_25k_and_75k,788348
+Georgia,obese,greater_than_75k,586246
+Georgia,obese,missing,294108
+Hawaii,underweight,less_than_25k,7312
+Hawaii,underweight,btw_25k_and_75k,7808
+Hawaii,underweight,greater_than_75k,7123
+Hawaii,underweight,missing,5036
+Hawaii,normal,less_than_25k,73850
+Hawaii,normal,btw_25k_and_75k,123061
+Hawaii,normal,greater_than_75k,144232
+Hawaii,normal,missing,56230
+Hawaii,overweight,less_than_25k,62008
+Hawaii,overweight,btw_25k_and_75k,119096
+Hawaii,overweight,greater_than_75k,140835
+Hawaii,overweight,missing,40537
+Hawaii,obese,less_than_25k,58300
+Hawaii,obese,btw_25k_and_75k,84058
+Hawaii,obese,greater_than_75k,88352
+Hawaii,obese,missing,30576
+Idaho,underweight,less_than_25k,7223
+Idaho,underweight,btw_25k_and_75k,3608
+Idaho,underweight,greater_than_75k,5111
+Idaho,underweight,missing,7342
+Idaho,normal,less_than_25k,83702
+Idaho,normal,btw_25k_and_75k,152734
+Idaho,normal,greater_than_75k,118338
+Idaho,normal,missing,51916
+Idaho,overweight,less_than_25k,78927
+Idaho,overweight,btw_25k_and_75k,195925
+Idaho,overweight,greater_than_75k,117386
+Idaho,overweight,missing,34670
+Idaho,obese,less_than_25k,77685
+Idaho,obese,btw_25k_and_75k,145258
+Idaho,obese,greater_than_75k,86835
+Idaho,obese,missing,29493
+Illinois,underweight,less_than_25k,53187
+Illinois,underweight,btw_25k_and_75k,60064
+Illinois,underweight,greater_than_75k,39093
+Illinois,underweight,missing,15571
+Illinois,normal,less_than_25k,596492
+Illinois,normal,btw_25k_and_75k,976025
+Illinois,normal,greater_than_75k,1031808
+Illinois,normal,missing,307485
+Illinois,overweight,less_than_25k,620537
+Illinois,overweight,btw_25k_and_75k,1140939
+Illinois,overweight,greater_than_75k,1221854
+Illinois,overweight,missing,234385
+Illinois,obese,less_than_25k,779048
+Illinois,obese,btw_25k_and_75k,998253
+Illinois,obese,greater_than_75k,903562
+Illinois,obese,missing,248906
+Indiana,underweight,less_than_25k,30800
+Indiana,underweight,btw_25k_and_75k,30926
+Indiana,underweight,greater_than_75k,6309
+Indiana,underweight,missing,28743
+Indiana,normal,less_than_25k,305078
+Indiana,normal,btw_25k_and_75k,513385
+Indiana,normal,greater_than_75k,389994
+Indiana,normal,missing,272680
+Indiana,overweight,less_than_25k,245781
+Indiana,overweight,btw_25k_and_75k,591803
+Indiana,overweight,greater_than_75k,439317
+Indiana,overweight,missing,241690
+Indiana,obese,less_than_25k,337096
+Indiana,obese,btw_25k_and_75k,621335
+Indiana,obese,greater_than_75k,412439
+Indiana,obese,missing,229126
+Iowa,underweight,less_than_25k,11085
+Iowa,underweight,btw_25k_and_75k,9898
+Iowa,underweight,greater_than_75k,3542
+Iowa,underweight,missing,7175
+Iowa,normal,less_than_25k,122764
+Iowa,normal,btw_25k_and_75k,223126
+Iowa,normal,greater_than_75k,209676
+Iowa,normal,missing,96523
+Iowa,overweight,less_than_25k,118090
+Iowa,overweight,btw_25k_and_75k,291575
+Iowa,overweight,greater_than_75k,261237
+Iowa,overweight,missing,93655
+Iowa,obese,less_than_25k,163062
+Iowa,obese,btw_25k_and_75k,322937
+Iowa,obese,greater_than_75k,228796
+Iowa,obese,missing,76195
+Kansas,underweight,less_than_25k,9151
+Kansas,underweight,btw_25k_and_75k,9044
+Kansas,underweight,greater_than_75k,5184
+Kansas,underweight,missing,5724
+Kansas,normal,less_than_25k,127663
+Kansas,normal,btw_25k_and_75k,200298
+Kansas,normal,greater_than_75k,179237
+Kansas,normal,missing,94533
+Kansas,overweight,less_than_25k,108480
+Kansas,overweight,btw_25k_and_75k,270526
+Kansas,overweight,greater_than_75k,227338
+Kansas,overweight,missing,82832
+Kansas,obese,less_than_25k,160169
+Kansas,obese,btw_25k_and_75k,264477
+Kansas,obese,greater_than_75k,193055
+Kansas,obese,missing,74097
+Kentucky,underweight,less_than_25k,23976
+Kentucky,underweight,btw_25k_and_75k,6105
+Kentucky,underweight,greater_than_75k,5716
+Kentucky,underweight,missing,14226
+Kentucky,normal,less_than_25k,220524
+Kentucky,normal,btw_25k_and_75k,302039
+Kentucky,normal,greater_than_75k,238995
+Kentucky,normal,missing,208344
+Kentucky,overweight,less_than_25k,192899
+Kentucky,overweight,btw_25k_and_75k,373094
+Kentucky,overweight,greater_than_75k,285779
+Kentucky,overweight,missing,179074
+Kentucky,obese,less_than_25k,298694
+Kentucky,obese,btw_25k_and_75k,449935
+Kentucky,obese,greater_than_75k,264023
+Kentucky,obese,missing,172004
+Louisiana,underweight,less_than_25k,21231
+Louisiana,underweight,btw_25k_and_75k,13976
+Louisiana,underweight,greater_than_75k,7200
+Louisiana,underweight,missing,13883
+Louisiana,normal,less_than_25k,250762
+Louisiana,normal,btw_25k_and_75k,278939
+Louisiana,normal,greater_than_75k,254812
+Louisiana,normal,missing,167084
+Louisiana,overweight,less_than_25k,291955
+Louisiana,overweight,btw_25k_and_75k,334655
+Louisiana,overweight,greater_than_75k,314986
+Louisiana,overweight,missing,134778
+Louisiana,obese,less_than_25k,380538
+Louisiana,obese,btw_25k_and_75k,409791
+Louisiana,obese,greater_than_75k,287877
+Louisiana,obese,missing,133578
+Maine,underweight,less_than_25k,3623
+Maine,underweight,btw_25k_and_75k,6869
+Maine,underweight,greater_than_75k,3885
+Maine,underweight,missing,4403
+Maine,normal,less_than_25k,59920
+Maine,normal,btw_25k_and_75k,117866
+Maine,normal,greater_than_75k,91056
+Maine,normal,missing,58392
+Maine,overweight,less_than_25k,60120
+Maine,overweight,btw_25k_and_75k,134180
+Maine,overweight,greater_than_75k,112243
+Maine,overweight,missing,50111
+Maine,obese,less_than_25k,67717
+Maine,obese,btw_25k_and_75k,117849
+Maine,obese,greater_than_75k,74574
+Maine,obese,missing,46280
+Maryland,underweight,less_than_25k,22726
+Maryland,underweight,btw_25k_and_75k,14649
+Maryland,underweight,greater_than_75k,19050
+Maryland,underweight,missing,19363
+Maryland,normal,less_than_25k,219543
+Maryland,normal,btw_25k_and_75k,340077
+Maryland,normal,greater_than_75k,545085
+Maryland,normal,missing,265292
+Maryland,overweight,less_than_25k,195255
+Maryland,overweight,btw_25k_and_75k,438457
+Maryland,overweight,greater_than_75k,660165
+Maryland,overweight,missing,240780
+Maryland,obese,less_than_25k,243090
+Maryland,obese,btw_25k_and_75k,398159
+Maryland,obese,greater_than_75k,512951
+Maryland,obese,missing,181194
+Massachusetts,underweight,less_than_25k,19792
+Massachusetts,underweight,btw_25k_and_75k,26104
+Massachusetts,underweight,greater_than_75k,26287
+Massachusetts,underweight,missing,26904
+Massachusetts,normal,less_than_25k,252449
+Massachusetts,normal,btw_25k_and_75k,459675
+Massachusetts,normal,greater_than_75k,744057
+Massachusetts,normal,missing,359183
+Massachusetts,overweight,less_than_25k,226637
+Massachusetts,overweight,btw_25k_and_75k,528563
+Massachusetts,overweight,greater_than_75k,724054
+Massachusetts,overweight,missing,316137
+Massachusetts,obese,less_than_25k,210234
+Massachusetts,obese,btw_25k_and_75k,372362
+Massachusetts,obese,greater_than_75k,483626
+Massachusetts,obese,missing,215686
+Michigan,underweight,less_than_25k,45063
+Michigan,underweight,btw_25k_and_75k,40887
+Michigan,underweight,greater_than_75k,21823
+Michigan,underweight,missing,21998
+Michigan,normal,less_than_25k,433260
+Michigan,normal,btw_25k_and_75k,696726
+Michigan,normal,greater_than_75k,656099
+Michigan,normal,missing,431371
+Michigan,overweight,less_than_25k,412618
+Michigan,overweight,btw_25k_and_75k,873057
+Michigan,overweight,greater_than_75k,817274
+Michigan,overweight,missing,390361
+Michigan,obese,less_than_25k,576676
+Michigan,obese,btw_25k_and_75k,845542
+Michigan,obese,greater_than_75k,632161
+Michigan,obese,missing,328135
+Minnesota,underweight,less_than_25k,14236
+Minnesota,underweight,btw_25k_and_75k,23759
+Minnesota,underweight,greater_than_75k,16082
+Minnesota,underweight,missing,13336
+Minnesota,normal,less_than_25k,203186
+Minnesota,normal,btw_25k_and_75k,417539
+Minnesota,normal,greater_than_75k,482180
+Minnesota,normal,missing,185245
+Minnesota,overweight,less_than_25k,180922
+Minnesota,overweight,btw_25k_and_75k,495274
+Minnesota,overweight,greater_than_75k,566774
+Minnesota,overweight,missing,173127
+Minnesota,obese,less_than_25k,207928
+Minnesota,obese,btw_25k_and_75k,446719
+Minnesota,obese,greater_than_75k,414673
+Minnesota,obese,missing,121697
+Mississippi,underweight,less_than_25k,18315
+Mississippi,underweight,btw_25k_and_75k,4940
+Mississippi,underweight,greater_than_75k,3627
+Mississippi,underweight,missing,10201
+Mississippi,normal,less_than_25k,160359
+Mississippi,normal,btw_25k_and_75k,160611
+Mississippi,normal,greater_than_75k,95911
+Mississippi,normal,missing,114082
+Mississippi,overweight,less_than_25k,204241
+Mississippi,overweight,btw_25k_and_75k,259706
+Mississippi,overweight,greater_than_75k,143492
+Mississippi,overweight,missing,112558
+Mississippi,obese,less_than_25k,310336
+Mississippi,obese,btw_25k_and_75k,274230
+Mississippi,obese,greater_than_75k,142157
+Mississippi,obese,missing,113019
+Missouri,underweight,less_than_25k,31111
+Missouri,underweight,btw_25k_and_75k,18999
+Missouri,underweight,greater_than_75k,15388
+Missouri,underweight,missing,10946
+Missouri,normal,less_than_25k,283543
+Missouri,normal,btw_25k_and_75k,451151
+Missouri,normal,greater_than_75k,359322
+Missouri,normal,missing,312939
+Missouri,overweight,less_than_25k,261993
+Missouri,overweight,btw_25k_and_75k,513627
+Missouri,overweight,greater_than_75k,442011
+Missouri,overweight,missing,208504
+Missouri,obese,less_than_25k,350567
+Missouri,obese,btw_25k_and_75k,606891
+Missouri,obese,greater_than_75k,385048
+Missouri,obese,missing,225967
+Montana,underweight,less_than_25k,6452
+Montana,underweight,btw_25k_and_75k,5119
+Montana,underweight,greater_than_75k,1978
+Montana,underweight,missing,3019
+Montana,normal,less_than_25k,52818
+Montana,normal,btw_25k_and_75k,101322
+Montana,normal,greater_than_75k,62733
+Montana,normal,missing,50950
+Montana,overweight,less_than_25k,56286
+Montana,overweight,btw_25k_and_75k,103346
+Montana,overweight,greater_than_75k,75791
+Montana,overweight,missing,45473
+Montana,obese,less_than_25k,47863
+Montana,obese,btw_25k_and_75k,83963
+Montana,obese,greater_than_75k,47892
+Montana,obese,missing,27794
+Nebraska,underweight,less_than_25k,4717
+Nebraska,underweight,btw_25k_and_75k,4512
+Nebraska,underweight,greater_than_75k,3559
+Nebraska,underweight,missing,4008
+Nebraska,normal,less_than_25k,75896
+Nebraska,normal,btw_25k_and_75k,150074
+Nebraska,normal,greater_than_75k,133875
+Nebraska,normal,missing,46010
+Nebraska,overweight,less_than_25k,78194
+Nebraska,overweight,btw_25k_and_75k,180307
+Nebraska,overweight,greater_than_75k,168294
+Nebraska,overweight,missing,44966
+Nebraska,obese,less_than_25k,94901
+Nebraska,obese,btw_25k_and_75k,193000
+Nebraska,obese,greater_than_75k,134166
+Nebraska,obese,missing,41240
+Nevada,underweight,less_than_25k,9243
+Nevada,underweight,btw_25k_and_75k,11272
+Nevada,underweight,greater_than_75k,6665
+Nevada,underweight,missing,16962
+Nevada,normal,less_than_25k,113152
+Nevada,normal,btw_25k_and_75k,203443
+Nevada,normal,greater_than_75k,185512
+Nevada,normal,missing,155060
+Nevada,overweight,less_than_25k,138234
+Nevada,overweight,btw_25k_and_75k,294942
+Nevada,overweight,greater_than_75k,219876
+Nevada,overweight,missing,173562
+Nevada,obese,less_than_25k,124969
+Nevada,obese,btw_25k_and_75k,248689
+Nevada,obese,greater_than_75k,159161
+Nevada,obese,missing,105928
+New Hampshire,underweight,less_than_25k,2343
+New Hampshire,underweight,btw_25k_and_75k,3071
+New Hampshire,underweight,greater_than_75k,2896
+New Hampshire,underweight,missing,5327
+New Hampshire,normal,less_than_25k,47142
+New Hampshire,normal,btw_25k_and_75k,95990
+New Hampshire,normal,greater_than_75k,138707
+New Hampshire,normal,missing,54545
+New Hampshire,overweight,less_than_25k,40306
+New Hampshire,overweight,btw_25k_and_75k,119056
+New Hampshire,overweight,greater_than_75k,142807
+New Hampshire,overweight,missing,51925
+New Hampshire,obese,less_than_25k,56784
+New Hampshire,obese,btw_25k_and_75k,95694
+New Hampshire,obese,greater_than_75k,105581
+New Hampshire,obese,missing,37967
+New Jersey,underweight,less_than_25k,6359
+New Jersey,underweight,btw_25k_and_75k,63659
+New Jersey,underweight,greater_than_75k,19131
+New Jersey,underweight,missing,36958
+New Jersey,normal,less_than_25k,305392
+New Jersey,normal,btw_25k_and_75k,462116
+New Jersey,normal,greater_than_75k,978347
+New Jersey,normal,missing,424947
+New Jersey,overweight,less_than_25k,360542
+New Jersey,overweight,btw_25k_and_75k,572465
+New Jersey,overweight,greater_than_75k,918831
+New Jersey,overweight,missing,381523
+New Jersey,obese,less_than_25k,334037
+New Jersey,obese,btw_25k_and_75k,448984
+New Jersey,obese,greater_than_75k,615199
+New Jersey,obese,missing,164665
+New Mexico,underweight,less_than_25k,13752
+New Mexico,underweight,btw_25k_and_75k,9332
+New Mexico,underweight,greater_than_75k,4655
+New Mexico,underweight,missing,6097
+New Mexico,normal,less_than_25k,126815
+New Mexico,normal,btw_25k_and_75k,147583
+New Mexico,normal,greater_than_75k,104483
+New Mexico,normal,missing,69416
+New Mexico,overweight,less_than_25k,152780
+New Mexico,overweight,btw_25k_and_75k,175070
+New Mexico,overweight,greater_than_75k,131148
+New Mexico,overweight,missing,54920
+New Mexico,obese,less_than_25k,175314
+New Mexico,obese,btw_25k_and_75k,161050
+New Mexico,obese,greater_than_75k,97675
+New Mexico,obese,missing,41725
+New York,underweight,less_than_25k,88510
+New York,underweight,btw_25k_and_75k,88370
+New York,underweight,greater_than_75k,72864
+New York,underweight,missing,85832
+New York,normal,less_than_25k,873513
+New York,normal,btw_25k_and_75k,1209458
+New York,normal,greater_than_75k,1758998
+New York,normal,missing,1005955
+New York,overweight,less_than_25k,956428
+New York,overweight,btw_25k_and_75k,1309337
+New York,overweight,greater_than_75k,1675151
+New York,overweight,missing,934698
+New York,obese,less_than_25k,894365
+New York,obese,btw_25k_and_75k,1155119
+New York,obese,greater_than_75k,1127475
+New York,obese,missing,665548
+North Carolina,underweight,less_than_25k,55457
+North Carolina,underweight,btw_25k_and_75k,45099
+North Carolina,underweight,greater_than_75k,20229
+North Carolina,underweight,missing,35717
+North Carolina,normal,less_than_25k,468293
+North Carolina,normal,btw_25k_and_75k,671570
+North Carolina,normal,greater_than_75k,626049
+North Carolina,normal,missing,420303
+North Carolina,overweight,less_than_25k,498677
+North Carolina,overweight,btw_25k_and_75k,895579
+North Carolina,overweight,greater_than_75k,713193
+North Carolina,overweight,missing,459976
+North Carolina,obese,less_than_25k,545778
+North Carolina,obese,btw_25k_and_75k,916116
+North Carolina,obese,greater_than_75k,604089
+North Carolina,obese,missing,347108
+North Dakota,underweight,less_than_25k,1936
+North Dakota,underweight,btw_25k_and_75k,1292
+North Dakota,underweight,greater_than_75k,1844
+North Dakota,underweight,missing,775
+North Dakota,normal,less_than_25k,28039
+North Dakota,normal,btw_25k_and_75k,50851
+North Dakota,normal,greater_than_75k,52372
+North Dakota,normal,missing,18694
+North Dakota,overweight,less_than_25k,30381
+North Dakota,overweight,btw_25k_and_75k,68109
+North Dakota,overweight,greater_than_75k,71973
+North Dakota,overweight,missing,22774
+North Dakota,obese,less_than_25k,34763
+North Dakota,obese,btw_25k_and_75k,67762
+North Dakota,obese,greater_than_75k,67776
+North Dakota,obese,missing,18452
+Ohio,underweight,less_than_25k,51770
+Ohio,underweight,btw_25k_and_75k,32161
+Ohio,underweight,greater_than_75k,23075
+Ohio,underweight,missing,28467
+Ohio,normal,less_than_25k,598743
+Ohio,normal,btw_25k_and_75k,832856
+Ohio,normal,greater_than_75k,689663
+Ohio,normal,missing,405387
+Ohio,overweight,less_than_25k,560558
+Ohio,overweight,btw_25k_and_75k,1079133
+Ohio,overweight,greater_than_75k,911378
+Ohio,overweight,missing,351709
+Ohio,obese,less_than_25k,728542
+Ohio,obese,btw_25k_and_75k,1052754
+Ohio,obese,greater_than_75k,810799
+Ohio,obese,missing,276466
+Oklahoma,underweight,less_than_25k,20904
+Oklahoma,underweight,btw_25k_and_75k,20728
+Oklahoma,underweight,greater_than_75k,9748
+Oklahoma,underweight,missing,5254
+Oklahoma,normal,less_than_25k,187741
+Oklahoma,normal,btw_25k_and_75k,265713
+Oklahoma,normal,greater_than_75k,183518
+Oklahoma,normal,missing,139675
+Oklahoma,overweight,less_than_25k,202600
+Oklahoma,overweight,btw_25k_and_75k,376809
+Oklahoma,overweight,greater_than_75k,238207
+Oklahoma,overweight,missing,136475
+Oklahoma,obese,less_than_25k,238788
+Oklahoma,obese,btw_25k_and_75k,377790
+Oklahoma,obese,greater_than_75k,222028
+Oklahoma,obese,missing,116472
+Oregon,underweight,less_than_25k,16866
+Oregon,underweight,btw_25k_and_75k,15310
+Oregon,underweight,greater_than_75k,10777
+Oregon,underweight,missing,17642
+Oregon,normal,less_than_25k,198733
+Oregon,normal,btw_25k_and_75k,329733
+Oregon,normal,greater_than_75k,321980
+Oregon,normal,missing,189051
+Oregon,overweight,less_than_25k,208533
+Oregon,overweight,btw_25k_and_75k,376839
+Oregon,overweight,greater_than_75k,327508
+Oregon,overweight,missing,133579
+Oregon,obese,less_than_25k,225480
+Oregon,obese,btw_25k_and_75k,330722
+Oregon,obese,greater_than_75k,243078
+Oregon,obese,missing,117196
+Pennsylvania,underweight,less_than_25k,56039
+Pennsylvania,underweight,btw_25k_and_75k,47395
+Pennsylvania,underweight,greater_than_75k,34648
+Pennsylvania,underweight,missing,28821
+Pennsylvania,normal,less_than_25k,534234
+Pennsylvania,normal,btw_25k_and_75k,954719
+Pennsylvania,normal,greater_than_75k,1009838
+Pennsylvania,normal,missing,539835
+Pennsylvania,overweight,less_than_25k,628127
+Pennsylvania,overweight,btw_25k_and_75k,1058547
+Pennsylvania,overweight,greater_than_75k,1143523
+Pennsylvania,overweight,missing,464983
+Pennsylvania,obese,less_than_25k,596246
+Pennsylvania,obese,btw_25k_and_75k,1017386
+Pennsylvania,obese,greater_than_75k,904453
+Pennsylvania,obese,missing,392506
+Rhode Island,underweight,less_than_25k,3644
+Rhode Island,underweight,btw_25k_and_75k,5234
+Rhode Island,underweight,greater_than_75k,3136
+Rhode Island,underweight,missing,3354
+Rhode Island,normal,less_than_25k,45118
+Rhode Island,normal,btw_25k_and_75k,76124
+Rhode Island,normal,greater_than_75k,92505
+Rhode Island,normal,missing,44504
+Rhode Island,overweight,less_than_25k,53650
+Rhode Island,overweight,btw_25k_and_75k,81865
+Rhode Island,overweight,greater_than_75k,104102
+Rhode Island,overweight,missing,45733
+Rhode Island,obese,less_than_25k,53869
+Rhode Island,obese,btw_25k_and_75k,62569
+Rhode Island,obese,greater_than_75k,64156
+Rhode Island,obese,missing,33803
+South Carolina,underweight,less_than_25k,28021
+South Carolina,underweight,btw_25k_and_75k,17511
+South Carolina,underweight,greater_than_75k,8662
+South Carolina,underweight,missing,15714
+South Carolina,normal,less_than_25k,244792
+South Carolina,normal,btw_25k_and_75k,354223
+South Carolina,normal,greater_than_75k,258002
+South Carolina,normal,missing,194773
+South Carolina,overweight,less_than_25k,254405
+South Carolina,overweight,btw_25k_and_75k,497432
+South Carolina,overweight,greater_than_75k,378454
+South Carolina,overweight,missing,178624
+South Carolina,obese,less_than_25k,338893
+South Carolina,obese,btw_25k_and_75k,492457
+South Carolina,obese,greater_than_75k,259710
+South Carolina,obese,missing,176977
+South Dakota,underweight,less_than_25k,2011
+South Dakota,underweight,btw_25k_and_75k,5069
+South Dakota,underweight,greater_than_75k,808
+South Dakota,underweight,missing,2757
+South Dakota,normal,less_than_25k,34945
+South Dakota,normal,btw_25k_and_75k,72437
+South Dakota,normal,greater_than_75k,46318
+South Dakota,normal,missing,33110
+South Dakota,overweight,less_than_25k,30687
+South Dakota,overweight,btw_25k_and_75k,97486
+South Dakota,overweight,greater_than_75k,66377
+South Dakota,overweight,missing,37478
+South Dakota,obese,less_than_25k,36946
+South Dakota,obese,btw_25k_and_75k,71317
+South Dakota,obese,greater_than_75k,47605
+South Dakota,obese,missing,28134
+Tennessee,underweight,less_than_25k,31110
+Tennessee,underweight,btw_25k_and_75k,14402
+Tennessee,underweight,greater_than_75k,19513
+Tennessee,underweight,missing,10303
+Tennessee,normal,less_than_25k,385297
+Tennessee,normal,btw_25k_and_75k,478792
+Tennessee,normal,greater_than_75k,383897
+Tennessee,normal,missing,223714
+Tennessee,overweight,less_than_25k,366334
+Tennessee,overweight,btw_25k_and_75k,569553
+Tennessee,overweight,greater_than_75k,445162
+Tennessee,overweight,missing,230307
+Tennessee,obese,less_than_25k,491972
+Tennessee,obese,btw_25k_and_75k,610732
+Tennessee,obese,greater_than_75k,365767
+Tennessee,obese,missing,186481
+Texas,underweight,less_than_25k,62954
+Texas,underweight,btw_25k_and_75k,45997
+Texas,underweight,greater_than_75k,35018
+Texas,underweight,missing,95617
+Texas,normal,less_than_25k,1162575
+Texas,normal,btw_25k_and_75k,1662891
+Texas,normal,greater_than_75k,1661799
+Texas,normal,missing,1148385
+Texas,overweight,less_than_25k,1508808
+Texas,overweight,btw_25k_and_75k,2123273
+Texas,overweight,greater_than_75k,2236236
+Texas,overweight,missing,837844
+Texas,obese,less_than_25k,1617043
+Texas,obese,btw_25k_and_75k,2351210
+Texas,obese,greater_than_75k,1733847
+Texas,obese,missing,1009688
+Utah,underweight,less_than_25k,7571
+Utah,underweight,btw_25k_and_75k,11653
+Utah,underweight,greater_than_75k,14165
+Utah,underweight,missing,12231
+Utah,normal,less_than_25k,107128
+Utah,normal,btw_25k_and_75k,242504
+Utah,normal,greater_than_75k,254096
+Utah,normal,missing,127337
+Utah,overweight,less_than_25k,83608
+Utah,overweight,btw_25k_and_75k,242277
+Utah,overweight,greater_than_75k,276419
+Utah,overweight,missing,101349
+Utah,obese,less_than_25k,78350
+Utah,obese,btw_25k_and_75k,215970
+Utah,obese,greater_than_75k,197695
+Utah,obese,missing,76555
+Vermont,underweight,less_than_25k,1479
+Vermont,underweight,btw_25k_and_75k,1871
+Vermont,underweight,greater_than_75k,1584
+Vermont,underweight,missing,2129
+Vermont,normal,less_than_25k,31346
+Vermont,normal,btw_25k_and_75k,57041
+Vermont,normal,greater_than_75k,52183
+Vermont,normal,missing,33479
+Vermont,overweight,less_than_25k,23844
+Vermont,overweight,btw_25k_and_75k,59769
+Vermont,overweight,greater_than_75k,49500
+Vermont,overweight,missing,23522
+Vermont,obese,less_than_25k,27249
+Vermont,obese,btw_25k_and_75k,54430
+Vermont,obese,greater_than_75k,30782
+Vermont,obese,missing,15792
+Virginia,underweight,less_than_25k,34638
+Virginia,underweight,btw_25k_and_75k,26952
+Virginia,underweight,greater_than_75k,24917
+Virginia,underweight,missing,23704
+Virginia,normal,less_than_25k,294745
+Virginia,normal,btw_25k_and_75k,546372
+Virginia,normal,greater_than_75k,754543
+Virginia,normal,missing,341288
+Virginia,overweight,less_than_25k,315217
+Virginia,overweight,btw_25k_and_75k,683019
+Virginia,overweight,greater_than_75k,900518
+Virginia,overweight,missing,282918
+Virginia,obese,less_than_25k,392466
+Virginia,obese,btw_25k_and_75k,643313
+Virginia,obese,greater_than_75k,618706
+Virginia,obese,missing,188148
+Washington,underweight,less_than_25k,22593
+Washington,underweight,btw_25k_and_75k,27179
+Washington,underweight,greater_than_75k,22088
+Washington,underweight,missing,29566
+Washington,normal,less_than_25k,291279
+Washington,normal,btw_25k_and_75k,515162
+Washington,normal,greater_than_75k,683891
+Washington,normal,missing,331196
+Washington,overweight,less_than_25k,279306
+Washington,overweight,btw_25k_and_75k,578072
+Washington,overweight,greater_than_75k,703757
+Washington,overweight,missing,258741
+Washington,obese,less_than_25k,281161
+Washington,obese,btw_25k_and_75k,530654
+Washington,obese,greater_than_75k,512753
+Washington,obese,missing,179060
+West Virginia,underweight,less_than_25k,9429
+West Virginia,underweight,btw_25k_and_75k,6426
+West Virginia,underweight,greater_than_75k,2567
+West Virginia,underweight,missing,4508
+West Virginia,normal,less_than_25k,105593
+West Virginia,normal,btw_25k_and_75k,127865
+West Virginia,normal,greater_than_75k,66341
+West Virginia,normal,missing,55569
+West Virginia,overweight,less_than_25k,109122
+West Virginia,overweight,btw_25k_and_75k,185420
+West Virginia,overweight,greater_than_75k,90939
+West Virginia,overweight,missing,53538
+West Virginia,obese,less_than_25k,173010
+West Virginia,obese,btw_25k_and_75k,205613
+West Virginia,obese,greater_than_75k,97051
+West Virginia,obese,missing,58669
+Wisconsin,underweight,less_than_25k,19465
+Wisconsin,underweight,btw_25k_and_75k,14794
+Wisconsin,underweight,greater_than_75k,18029
+Wisconsin,underweight,missing,22383
+Wisconsin,normal,less_than_25k,220789
+Wisconsin,normal,btw_25k_and_75k,425105
+Wisconsin,normal,greater_than_75k,444296
+Wisconsin,normal,missing,152831
+Wisconsin,overweight,less_than_25k,269346
+Wisconsin,overweight,btw_25k_and_75k,571554
+Wisconsin,overweight,greater_than_75k,524946
+Wisconsin,overweight,missing,128656
+Wisconsin,obese,less_than_25k,276905
+Wisconsin,obese,btw_25k_and_75k,534236
+Wisconsin,obese,greater_than_75k,388906
+Wisconsin,obese,missing,122552
+Wyoming,underweight,less_than_25k,1372
+Wyoming,underweight,btw_25k_and_75k,2830
+Wyoming,underweight,greater_than_75k,1806
+Wyoming,underweight,missing,673
+Wyoming,normal,less_than_25k,28350
+Wyoming,normal,btw_25k_and_75k,55513
+Wyoming,normal,greater_than_75k,40143
+Wyoming,normal,missing,16242
+Wyoming,overweight,less_than_25k,25858
+Wyoming,overweight,btw_25k_and_75k,57149
+Wyoming,overweight,greater_than_75k,46837
+Wyoming,overweight,missing,16020
+Wyoming,obese,less_than_25k,26081
+Wyoming,obese,btw_25k_and_75k,46916
+Wyoming,obese,greater_than_75k,34863
+Wyoming,obese,missing,12015
