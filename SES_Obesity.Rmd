@@ -33,7 +33,7 @@ This dataset is the 2018 Behavioral Risk Factor Surveillance System from the CDC
 In our case, we're interested in two specific variables: income of the responder and their "Obesity Status," as classified by BMI. We want to determine if there is a significant relationship between these two variables; in essence, we want to see if BMI is independent from income level **in the state of Ohio**. Because both of these variables are nominal variables (they're both categorical), we're going to use the Chi-Squared Test of Independence (more on this later). **Before we begin, I want to stress that the purpose of this exercise is to demonstrate how to use R to run this test on some data, and that it is not intended to be an example of a "good" study - that is, I will not be talking in depth about survey design/weighting, biases, etc.**
 
 ##Looking at our Data and Determining What Exactly We Need
-We first need to figure out what data from this file/dataset we want exactly. If we go into the codebook for the BRFSS dataset (see link above), we can find BMI values collected under the label of "Computed Body Mass Index." **Note the SAS variable name for this is \_BMI5CAT.** We'll need this later. There are **four categories,** and each range of BMIs has a classification.
+We first need to figure out what data from this file/dataset we want exactly. If we go into the codebook for the BRFSS dataset (see link above), we can find BMI values collected under the label of "Computed Body Mass Index." There are **four categories,** and each range of BMIs has a classification.
 
 | Coding | BMI | Classification |
 | ---- | ---- | ---- |
@@ -42,7 +42,7 @@ We first need to figure out what data from this file/dataset we want exactly. If
 | 3 | 25.00 - 30.00 | Overweight |
 | 4 | 30.00 - 99.99 | Obese |
 
-We also need to find data on income level, so if we do some more digging into the codebook, we'll find what we want under the label "Income Level.\" **Note the SAS variable name for this is \_INCOME2.** We'll need this later. There are **11 categories** here (note the don't know/refused/not asked categories):
+We also need to find data on income level, so if we do some more digging into the codebook, we'll find what we want under the label "Income Level.\" There are **11 categories** here (note the don't know/refused/not asked categories):
 
 | Coding | Income Level |
 | ---- | ---- |
@@ -57,7 +57,7 @@ We also need to find data on income level, so if we do some more digging into th
 | 77 | Don't know / Not sure|
 | 99 | Refused |
 
-Finally, we want to know which state (by FIPS code) each respondent lives in so that we can perform our analysis on Ohio residents. We'll find what we want under the label "State." **Note the SAS variable name for this is \_STATE.**
+Finally, we want to know which state (by FIPS code) each respondent lives in so that we can perform our analysis on Ohio residents. We'll find what we want under the label "State."
 
 ## Putting our Data into a CSV
 We did some of the pre-work and cleaning of this data for you - because it's a complex survey, the data needs to take into account survey weighting among some other things. We've also taken only the variables we need to perform our specific analysis.  The code used to do so is beyond the scope of the course at the moment, but if you're curious in doing something similar for your project, feel free to reach out and we can help you out. 

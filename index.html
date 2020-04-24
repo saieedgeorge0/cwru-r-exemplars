@@ -209,7 +209,7 @@ setwd(&quot;/Users/George/OneDrive/Projects/SES-Obesity-Status&quot;)
 </div>
 <div id="looking-at-our-data-and-determining-what-exactly-we-need" class="section level2">
 <h2>Looking at our Data and Determining What Exactly We Need</h2>
-<p>We first need to figure out what data from this file/dataset we want exactly. If we go into the codebook for the BRFSS dataset (see link above), we can find BMI values collected under the label of “Computed Body Mass Index.” <strong>Note the SAS variable name for this is _BMI5CAT.</strong> We’ll need this later. There are <strong>four categories,</strong> and each range of BMIs has a classification.</p>
+<p>We first need to figure out what data from this file/dataset we want exactly. If we go into the codebook for the BRFSS dataset (see link above), we can find BMI values collected under the label of “Computed Body Mass Index.” There are <strong>four categories,</strong> and each range of BMIs has a classification.</p>
 <table>
 <thead>
 <tr class="header">
@@ -241,7 +241,7 @@ setwd(&quot;/Users/George/OneDrive/Projects/SES-Obesity-Status&quot;)
 </tr>
 </tbody>
 </table>
-<p>We also need to find data on income level, so if we do some more digging into the codebook, we’ll find what we want under the label “Income Level.&quot; <strong>Note the SAS variable name for this is _INCOME2.</strong> We’ll need this later. There are <strong>11 categories</strong> here (note the don’t know/refused/not asked categories):</p>
+<p>We also need to find data on income level, so if we do some more digging into the codebook, we’ll find what we want under the label “Income Level.&quot; There are <strong>11 categories</strong> here (note the don’t know/refused/not asked categories):</p>
 <table>
 <thead>
 <tr class="header">
@@ -292,7 +292,7 @@ setwd(&quot;/Users/George/OneDrive/Projects/SES-Obesity-Status&quot;)
 </tr>
 </tbody>
 </table>
-<p>Finally, we want to know which state (by FIPS code) each respondent lives in so that we can perform our analysis on Ohio residents. We’ll find what we want under the label “State.” <strong>Note the SAS variable name for this is _STATE.</strong></p>
+<p>Finally, we want to know which state (by FIPS code) each respondent lives in so that we can perform our analysis on Ohio residents. We’ll find what we want under the label “State.”</p>
 </div>
 <div id="putting-our-data-into-a-csv" class="section level2">
 <h2>Putting our Data into a CSV</h2>
