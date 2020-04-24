@@ -80,7 +80,7 @@ library("kableExtra")
 ## Tidying up our data
 As you will see in a moment, 90% of the hard work for this example comes from actually cleaning our data. Running the statistical test is a breeze in comparison - despite the difficulty of the former, it's important to know to clean and recode data because you will almost never receive data organized exactly the way you want.
 
-If you skipped the last section, make sure you download the 'brfss_untidy.csv' from the Github repository where this is being hosted. When we look at this file, we see that our data is arranged in a table that looks like this:
+Make sure you download the 'brfss_untidy.csv' from the Github repository where this is being hosted. When we look at this file, we see that our data is arranged in a table that looks like this:
 
 | x.bmicat | income2 | x.state | Freq |
 | ---- | ---- | ---- | ---- |
@@ -93,7 +93,7 @@ If you skipped the last section, make sure you download the 'brfss_untidy.csv' f
 
 We want to make this easier for us to work with and understand. As a result, we're going to **recode** the data so that it makes more sense to us at a glance. For our BMI Data, we'll replace 1-4 with the appropriate categorization (underweight, normal weight, overweight, obese), and set any BLANK data as "missing". We'll also condense our income levels; we can make 1-4 a single category of under \$25,000, 5-7 another category of \$25,000 - \$75,000, 8 a category of \$75,000+, and 77 and 99 we will boths assign as "missing." Hopefully this makes sense - if not, scroll up and take another look at the tables above. Finally, we have another issue - our "state" column is not text, but rather state FIPS codes, which are federal numerical identifiers for states.
 
-Make sure you've downloaded "brfss_untidy.csv" from the Github folder that also contains this Rmd file. Next, we'll read it in:
+Next, we'll read this file in:
 ```{r}
 # We will read the data in our CSV into a dataframe.
 obeseDataFrame <- read_csv('brfss_untidy.csv', col_types='fffi')
