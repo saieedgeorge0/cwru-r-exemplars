@@ -30,10 +30,10 @@ setwd("/Users/George/OneDrive/Projects/SES-Obesity-Status")
 ##The Data We'll Be Using + Choice of Test
 This dataset is the 2018 Behavioral Risk Factor Surveillance System from the CDC. The data comes from a series of "national health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. Established in 1984 with 15 states, BRFSS now collects data in all 50 states as well as the District of Columbia and three U.S. territories. BRFSS completes more than 400,000 adult interviews each year, making it the largest continuously conducted health survey system in the world." The survey collects a huge amount of data from individuals regarding their health - if you're interested in looking at everything the survey asks about, you can view the codebook [here](https://www.cdc.gov/brfss/annual_data/2018/pdf/codebook18_llcp-v2-508.pdf). 
 
-In our case, we're interested in two specific variables: income of the responder and their "Obesity Status," as classified by BMI. We want to determine if there is a significant relationship between these two variables; in essence, we want to see if BMI is independent from income level **in the state of Ohio**. Because both of these variables are nominal variables (they're both categorical), we're going to use the Chi-Squared Test of Independence (more on this later). **Before we begin, I want to stress that the purpose of this exercise is to demonstrate how to use R to run this test on some data, and that it is not intended to be an example of a "good" study - that is, I will not be talking in depth about survey design/weighting, biases, etc.**
+In our case, we're interested in two specific variables: income of the responder and their "Obesity Status," as classified by BMI. We want to determine if there is a significant relationship between these two variables; in essence, we want to see if BMI is independent from income level **in the state of Ohio**. Because both of these variables are categorical variables, we're going to use the Chi-Squared Test of Independence. This is because we have categorical variables, independent observations we can put in a table, and non-sparse data (no low counts in any group). **The BRFSS is a complex survey. It has a complex sampling design (survey observations do not have an equal probability of being selected), so analyzing this data requires considerable care.** Complex surveys are used to save money, represent small sub-populations, and deal with naturally structured data. If you're interested in learning more, you can take the DataCCamp course "Analyzing Survey Data in R." Alternatively, many CDC datasets are taken from the BRFSS and have been pre-weighted for you ([for example](https://catalog.data.gov/dataset/nutrition-physical-activity-and-obesity-behavioral-risk-factor-surveillance-system/)). In this case, we've already created our dataset by extracting it from the BRFSS and weighing it for you. An actual manuscript using the BRFSS would take the additional step of using survey aware statistical tests.
 
 ##Looking at our Data and Determining What Exactly We Need
-We first need to figure out what data from this file/dataset we want exactly. If we go into the codebook for the BRFSS dataset (see link above), we can find BMI values collected under the label of "Computed Body Mass Index." There are **four categories,** and each range of BMIs has a classification.
+We first need to figure out what data from this file/dataset we want exactly. If we go into the codebook for the BRFSS dataset (see link above), we can find BMI values collected under the label of "Computed Body Mass Index." The variable associated with it is x.bmicat. There are **four categories,** and each range of BMIs has a classification.
 
 | Coding | BMI | Classification |
 | ---- | ---- | ---- |
@@ -42,7 +42,7 @@ We first need to figure out what data from this file/dataset we want exactly. If
 | 3 | 25.00 - 30.00 | Overweight |
 | 4 | 30.00 - 99.99 | Obese |
 
-We also need to find data on income level, so if we do some more digging into the codebook, we'll find what we want under the label "Income Level.\" There are **11 categories** here (note the don't know/refused/not asked categories):
+We also need to find data on income level, so if we do some more digging into the codebook, we'll find what we want under the label "Income Level.\" The variable associated with it is income2. There are **11 categories** here (note the don't know/refused/not asked categories):
 
 | Coding | Income Level |
 | ---- | ---- |
@@ -57,13 +57,13 @@ We also need to find data on income level, so if we do some more digging into th
 | 77 | Don't know / Not sure|
 | 99 | Refused |
 
-Finally, we want to know which state (by FIPS code) each respondent lives in so that we can perform our analysis on Ohio residents. We'll find what we want under the label "State."
+Finally, we want to know which state (by FIPS code) each respondent lives in so that we can perform our analysis on Ohio residents. We'll find what we want under the label "State." The variable associated with it is x.state.
 
 ## Putting our Data into a CSV
-We did some of the pre-work and cleaning of this data for you - because it's a complex survey, the data needs to take into account survey weighting among some other things. We've also taken only the variables we need to perform our specific analysis.  The code used to do so is beyond the scope of the course at the moment, but if you're curious in doing something similar for your project, feel free to reach out and we can help you out. 
+Like I mentioned, we did some of the pre-work and cleaning of this data for you - because it's a complex survey, the data needs to take into account survey weighting among some other things. We've also taken only the variables we need to perform our specific analysis.  The code used to do so is beyond the scope of the course at the moment, but if you're curious in doing something similar for your project, feel free to reach out and we can help you out. 
 
 ## Loading Necessary Packages
-We first need to install and load some packages that'll help us out. If you want to learn more about them, just do a quick Google search of "R package *packagename*." Install dplyr and readxl copying and pasting **install.packages(c("dplyr", "readxl", "tidyverse", "kable"))** into your console. If you put all four into a vector using c(), we can do this in one command. *readxl* and *tidyverse* let us read in excel files. *dplyr* is a package that will also help us out with data science. *kableExtra* allows us to make pretty tables.
+We first need to install and load some packages that'll help us out. If you want to learn more about them, just do a quick Google search of "R package *packagename*." Install dplyr and readxl copying and pasting **install.packages(c("readxl", "tidyverse", "kableExtra"))** into your console. If you put all three into a vector using c(), we can do this in one command. *readxl* lets us read in excel files. *tidyverse* is a package that will also help us out with data science. *kableExtra* allows us to make pretty tables.
 
 
 ```{r, warning=FALSE, message=FALSE}
@@ -71,10 +71,9 @@ We first need to install and load some packages that'll help us out. If you want
 # We can't use the same trick for loading multiple packages at once, unfortunately
 # We will need all of these later
 
-library("tidyverse")
-library("dplyr")
 library("readxl")
 library("kableExtra")
+library("tidyverse")
 ```
 
 ## Tidying up our data
@@ -91,13 +90,18 @@ Make sure you download the 'brfss_untidy.csv' from the Github repository where t
 | 1 | 2 | 1 | 4781 |
 | ... | ... | ... | ... |
 
-We want to make this easier for us to work with and understand. As a result, we're going to **recode** the data so that it makes more sense to us at a glance. For our BMI Data, we'll replace 1-4 with the appropriate categorization (underweight, normal weight, overweight, obese), and set any BLANK data as "missing". We'll also condense our income levels; we can make 1-4 a single category of under \$25,000, 5-7 another category of \$25,000 - \$75,000, 8 a category of \$75,000+, and 77 and 99 we will boths assign as "missing." Hopefully this makes sense - if not, scroll up and take another look at the tables above. Finally, we have another issue - our "state" column is not text, but rather state FIPS codes, which are federal numerical identifiers for states.
+We want to make this easier for us to work with and understand. As a result, we're going to **recode** the data so that it makes more sense to us at a glance. For our BMI Data, we'll replace 1-3 with non-obese, 4 with obese, and set any BLANK data as "missing". We'll also condense our income levels; we can make 1-6 a single category of under \$50,000, 5-8 another category of \$50,000+, and 77 and 99 we will both assign as "missing." Hopefully this makes sense - if not, scroll up and take another look at the tables above. Finally, we have another issue - our "state" column is not text, but rather state FIPS codes, which are federal numerical identifiers for states.
 
 Next, we'll read this file in:
 ```{r}
 # We will read the data in our CSV into a dataframe.
 obeseDataFrame <- read_csv('brfss_untidy.csv', col_types='fffi')
 head(obeseDataFrame)
+```
+We can quickly look at some basic aggregate information about our dataset before we move on:
+
+```{r}
+summary(obeseDataFrame)
 ```
 
 We want to be able to convert our FIPS codes to actual state names. We can download FIPS codes from [here](https://www.census.gov/geographies/reference-files/2018/demo/popest/2018-fips.html) as an XLSX file. Put it in the same folder as everything else. We want to read this in as a dataframe:
@@ -139,22 +143,22 @@ cleanedObeseDF <- obeseDataFrame %>% # we're taking our obeseDataFrame and THEN 
   # Our XLSX file with FIPS code did not include these, so we won't either, and THEN:
   
   left_join(fipsDataFrame, by='fips') %>% # a left join will merge two data frames:
-  # all rows from the first table and any matching rows from the second table, by a specific variable
-  # (in this case, we'll merge fipsDataFrame to cleanedObeseDF, merging rows if they have the same FIPS code),
-  #and THEN
+  # each row will be merged only if a variable (FIPS code in our case) exists in both data frames
+  # and THEN
   
   group_by(state, bmi, income) %>% 
   summarize(count=sum(Freq)) # these last two lines group our data so it's more organized: 
-  # we want to group first by state, then by bmi, then by income, and then sum up any duplicates. 
+  # we want to group first by state, then by bmi, then by income, and then sum these up by category
   # So, for example, we have multiple row for Alabama with a count for people who are underweight 
   # and who make under 25,000 dollars - we want to sum this up so that we only have row per state/bmi/income set.
 
 cleanedObeseDF %>% write_csv('brfss_tidy.csv') # put this dataframe into a CSV in case we need it later
 head(cleanedObeseDF)
+summary(cleanedObeseDF)
 ```
 
 ## Isolating the Exact Data We Want
-That was a lot, I know. Almost there, though - stick with it! Next we want to 1) select only rows for the state of Ohio, and we'll want to exclude rows where data is missing.
+That was a lot, I know. Almost there, though - stick with it! Next we want to 1) select only rows for the state of Ohio, and we'll want to exclude rows where data is missing. Remember to always consider how many missing values there are compared to non-missing values and also ensure missing values are distributed across other variables in a relatively organized way before removing them. 
 
 ```{r}
 ohioDF <- cleanedObeseDF %>% filter(state == 'Ohio') # select only rows where the state is Ohio
@@ -200,14 +204,31 @@ First, we want to put our data into a 3x4 table. Then we'll run our chi-squared 
 obeseTable = xtabs(count ~ bmi + income, ohioDF) # creates a contingency table with BMI and Income as row/column,
 # using count as the value for each pairing.
 obeseTable = obeseTable[, -3] # remove the "missing" column (which is the 4th column) which persists, oddly
-print(obeseTable)
+addmargins(obeseTable)
 
 #just for fun, we'll also make a prop table (this will show us proportions, rather than counts):
 obeseProp <- with(ohioDF, obeseTable) %>% prop.table() # using all the ohioDF dataframe + our obeseTable, we can
 # use dlpyr's "prop.table()" function to create a proportions table with our data
-print(obeseProp)
 
-chisq.test(obeseTable) # run chi-squared independence test on our data!
+# let's use kable to print our table!
+obeseProp %>% # take our ohioDF, then:
+  kable() %>% # make a kable with it, then:
+  kable_styling(c("striped", "hover")) # add kable styling
+
+chisq <- chisq.test(obeseTable) # run chi-squared independence test on our data!
+print(chisq)
 ```
 
 We get a p-value of 2.2e-16, which is considerably lower than the 0.05 significance level, so we reject the null hypothesis that "obesity status" is independent of income level in the state of Ohio.
+
+Next, we want want to take a look at the directionality of the relationship between these two variables. Install *corrplot* using **install.packages("corrplot")**. We're going to take the residuals from our chi-squared test and plot them in a simple correlation plot.
+
+```{r}
+library(corrplot) # load corrplot
+round(chisq$residuals, 3) # Take residuals from our test, round to three decimal places
+corrplot(chisq$residuals, is.cor = FALSE) # plot our correlation plot with these residuals
+```
+
+The positive residuals are blue - positive residual values in cells indicate a positive relationship between the row and column variables. The opposite is true for the red dots, which are indicate a negative relationship for the two variables. In this case, we can see that there appears to be a strong positive relationship between not being obese and making over 50k, and there is also a strong positive relationship between being obese and making under 50k. The opposite is also true - there is a strong negative relationship between not being obese and making under 50k, and there is a strong negative relationship between being obese and making over 50k. **It is important to note that a chi-squared test cannot indicate the directionality of a relationship; for example, it is impossible for us to tell if obesity "increases"" as income decreases, or if income decreases as the obesity "increases."'** This is true for any chi-squared test. 
+
+That's it! If you have any questions, feel free to post them in the discussion board on Canvas for this example.
