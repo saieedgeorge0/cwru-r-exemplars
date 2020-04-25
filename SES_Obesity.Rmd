@@ -204,31 +204,26 @@ First, we want to put our data into a 3x4 table. Then we'll run our chi-squared 
 obeseTable = xtabs(count ~ bmi + income, ohioDF) # creates a contingency table with BMI and Income as row/column,
 # using count as the value for each pairing.
 obeseTable = obeseTable[, -3] # remove the "missing" column (which is the 4th column) which persists, oddly
-addmargins(obeseTable)
-
-#just for fun, we'll also make a prop table (this will show us proportions, rather than counts):
-obeseProp <- with(ohioDF, obeseTable) %>% prop.table() # using all the ohioDF dataframe + our obeseTable, we can
-# use dlpyr's "prop.table()" function to create a proportions table with our data
-
-# let's use kable to print our table!
-obeseProp %>% # take our ohioDF, then:
-  kable() %>% # make a kable with it, then:
-  kable_styling(c("striped", "hover")) # add kable styling
+addmargins(obeseTable) # adds margins when printing the table
 
 chisq <- chisq.test(obeseTable) # run chi-squared independence test on our data!
 print(chisq)
 ```
 
-We get a p-value of 2.2e-16, which is considerably lower than the 0.05 significance level, so we reject the null hypothesis that "obesity status" is independent of income level in the state of Ohio.
+We get a p-value of 2.2e-16, which is considerably lower than the 0.05 significance level, so we reject the null hypothesis that "obesity status" is independent of income level in the state of Ohio. **It is important to note that a chi-squared test cannot indicate the directionality of a relationship; for example, it is impossible for us to tell if obesity "increases"" as income decreases, or if income decreases as the obesity "increases."'** This is true for any chi-squared test. 
 
-Next, we want want to take a look at the directionality of the relationship between these two variables. Install *corrplot* using **install.packages("corrplot")**. We're going to take the residuals from our chi-squared test and plot them in a simple correlation plot.
+To get an effect size and directionality, we can run this:
 
 ```{r}
-library(corrplot) # load corrplot
-round(chisq$residuals, 3) # Take residuals from our test, round to three decimal places
-corrplot(chisq$residuals, is.cor = FALSE) # plot our correlation plot with these residuals
+#just for fun, we'll also make a prop table (this will show us proportions, rather than counts):
+addmargins(round(100*prop.table(obeseTable, 2), 1), 1) %>% #calculate proportions again, but
+  #this time *within* columns. We also add a row of margin totals to let us see the total of
+  #these columns to make sure we did it correctly. This gives us both effect size
+  #and proportionality for our sample.
+  kable() %>% # make a kable with it, then:
+  kable_styling(c("striped", "hover")) # add kable styling
 ```
 
-The positive residuals are blue - positive residual values in cells indicate a positive relationship between the row and column variables. The opposite is true for the red dots, which are indicate a negative relationship for the two variables. In this case, we can see that there appears to be a strong positive relationship between not being obese and making over 50k, and there is also a strong positive relationship between being obese and making under 50k. The opposite is also true - there is a strong negative relationship between not being obese and making under 50k, and there is a strong negative relationship between being obese and making over 50k. **It is important to note that a chi-squared test cannot indicate the directionality of a relationship; for example, it is impossible for us to tell if obesity "increases"" as income decreases, or if income decreases as the obesity "increases."'** This is true for any chi-squared test. 
+The p value is statistically significant in part because we have a huge sample size. Huge sample sizes will find statistical significance even when there is little clinical significance. So we should always check the effect size. In our sample, 36.0% of people with income < \$50k were obese vs 34.3% of people with income >= \$50k. Is this a big enough difference to worry about epidemiologically? Decide for yourself, but some disciplines would argue that even the tiniest excess risk is too much. In this case, they would probably say that the difference isn't even that tiny and it is an epidemiologically important finding.
 
 That's it! If you have any questions, feel free to post them in the discussion board on Canvas for this example.
